@@ -10,8 +10,8 @@ app.use(cors());
 
 // 2. เชื่อมต่อ Database
 // ตั้งชื่อ Database ว่า 'daily-log-db'
-mongoose.connect('mongodb://127.0.0.1:27017/daily-log-db')
-    .then(() => console.log('DB Connected!'))
+mongoose.connect('mongodb+srv://dosw1811_db_user:lds3O1koJtGPo13O@cluster0.rkilswt.mongodb.net/daily-log-db?retryWrites=true&w=majority&appName=Cluster0')
+    .then(() => console.log('☁️  Cloud DB Connected!'))
     .catch(err => console.log(err));
 
 // 3. สร้าง Schema และ Model (โจทย์ใหม่!)
