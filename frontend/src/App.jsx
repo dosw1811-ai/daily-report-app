@@ -34,7 +34,7 @@ function App() {
 
   const fetchLogs = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/logs?date=${date}`)
+      const response = await fetch(`https://daily-report-app-s0k9.onrender.com//logs?date=${date}`)
       const data = await response.json()
       setLogs(data)
     } catch (error) { console.error(error) }
